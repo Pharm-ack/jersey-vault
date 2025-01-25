@@ -17,7 +17,6 @@ import {
 import { Skeleton } from "@/components/ui/skeleton";
 
 import prisma from "@/lib/prisma";
-import { updateOrderStatus } from "@/lib/actions";
 import OrderStatusSelect from "@/components/order-status";
 
 async function fetchOrders() {
@@ -111,7 +110,8 @@ async function OrderTable() {
               {new Intl.DateTimeFormat("en-US").format(item.createdAt)}
             </TableCell>
             <TableCell className="text-right">
-              ${new Intl.NumberFormat("en-US").format(item.totalPrice / 100)}
+              &#8358;
+              {new Intl.NumberFormat("en-US").format(item.totalPrice / 100)}
             </TableCell>
           </TableRow>
         ))}

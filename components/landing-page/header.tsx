@@ -94,6 +94,7 @@ export function Header() {
                   <DialogTrigger asChild>
                     <Button variant="ghost">Dashboard</Button>
                   </DialogTrigger>
+
                   <DialogContent className="w-[500px] max-h-[150px]">
                     <DialogHeader>
                       <DialogTitle>
@@ -182,7 +183,8 @@ export function Header() {
                   Dashboard
                 </Button>
               </DialogTrigger>
-              <DialogContent className="w-[500px] max-h-[150px]">
+              <DialogTitle></DialogTitle>
+              <DialogContent className="rounded w-[350px] max-h-[200px]">
                 <DialogHeader>
                   <DialogTitle>Log in as Admin to view dashboard</DialogTitle>
                   <DialogDescription>

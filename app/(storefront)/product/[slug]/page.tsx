@@ -79,7 +79,7 @@ async function AsyncProductContent({ slug }: { slug: string }) {
                 {product.name}
               </h1>
               <p className="text-3xl font-bold text-primary">
-                ${product.price.toFixed(2)}
+                &#8358;{product.price.toFixed(2)}
               </p>
             </div>
 

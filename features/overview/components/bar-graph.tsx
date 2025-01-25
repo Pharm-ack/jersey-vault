@@ -100,7 +100,7 @@ export function BarGraph({ data }: RevenueChartProps) {
                       })
                     }
                     formatter={(value) =>
-                      `$${typeof value === "number" ? value.toFixed(2) : value}`
+                      `$&#8358;{typeof value === "number" ? value.toFixed(2) : value}`
                     }
                   />
                 }

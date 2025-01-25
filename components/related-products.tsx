@@ -30,7 +30,7 @@ export function RelatedProducts({ products }: RelatedProductsProps) {
               />
             </div>
             <h3 className="font-semibold text-lg mb-1">{product.name}</h3>
-            <p className="text-primary">${product.price.toFixed(2)}</p>
+            <p className="text-primary">&#8358;{product.price.toFixed(2)}</p>
           </Link>
         ))}
       </div>

@@ -52,7 +52,7 @@ export default function RootLayout({
       <Suspense>
         <UTSSR />
       </Suspense>
-      <body className={`${GeistMono.className}`}>
+      <body className={`${GeistMono.className} scroll-smooth`}>
         <SessionProvider>
           <CartProvider>
             <NextTopLoader showSpinner={false} />

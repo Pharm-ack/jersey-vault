@@ -14,7 +14,7 @@ export default function PendingButton({
     <div>
       {pending ? (
         <Button className="w-full" type="submit">
-          <LucideLoader2 className="animate-spin h-4 w-4 mr-2" /> Loading...
+          <LucideLoader2 className="animate-spin h-4 w-4 mr-2" /> Please Wait...
         </Button>
       ) : (
         <Button

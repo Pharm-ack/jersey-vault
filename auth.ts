@@ -21,15 +21,15 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       return true;
     },
 
-    // authorized({ request: { nextUrl }, auth }) {
-    //   const isLoggedIn = !!auth?.user;
-    //   const { pathname } = nextUrl;
+    authorized({ request: { nextUrl }, auth }) {
+      const isLoggedIn = !!auth?.user;
+      const { pathname } = nextUrl;
 
-    //   if (pathname.startsWith("/auth") && isLoggedIn) {
-    //     return Response.redirect(new URL("/", nextUrl));
-    //   }
-    //   return true;
-    // },
+      if (pathname.startsWith("/auth") && isLoggedIn) {
+        return Response.redirect(new URL("/", nextUrl));
+      }
+      return true;
+    },
 
     async jwt({ token, user, account, trigger }) {
       // Initial sign in

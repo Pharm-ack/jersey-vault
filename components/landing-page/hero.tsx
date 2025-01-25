@@ -39,8 +39,8 @@ export default function Hero() {
               Shop Easy, Ball Hard
             </h1>
             <p className="text-lg text-white/90 mb-8">
-              Experience the best in sports fashion with SportsContinent. Shop
-              our exclusive range of jerseys, tracksuits, polos, and sport caps.
+              Experience the best in sports fashion with JerseyValut. Shop our
+              exclusive range of jerseys, tracksuits, polos, and sport caps.
               Every piece tells a story.
             </p>
             <Button

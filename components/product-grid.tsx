@@ -31,7 +31,7 @@ export async function ProductGrid({ products }: ProductGridProps) {
             </div>
             <div className="p-4">
               <h3 className="font-semibold mb-2">{product.name}</h3>
-              <p className="text-lg">${product.price.toFixed(2)}</p>
+              <p className="text-lg">&#8358;{product.price.toFixed(2)}</p>
             </div>
           </Link>
         </Card>

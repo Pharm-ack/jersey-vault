@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "./ui/button";
+import { AddToCart } from "./cart/add-to-cart";
 
 interface ProductCardProps {
   id: string;
@@ -34,19 +35,11 @@ export function ProductCard({
       </Link>
       <CardContent className="p-4">
         <h3 className="font-semibold text-lg mb-2">{name}</h3>
-        <p className="text-primary font-bold">${price.toFixed(2)}</p>
+        <p className="text-primary font-bold">&#8358;{price.toFixed(2)}</p>
         <div className="flex items-center justify-between">
           <p className="text-sm text-muted-foreground mt-1 capitalize">
             {category}
           </p>
-          <Button
-            className=" bg-blue-600 hover:bg-blue-700"
-            onClick={(e) => {
-              e.preventDefault();
-            }}
-          >
-            Add to cart
-          </Button>
         </div>
       </CardContent>
     </div>

@@ -68,7 +68,8 @@ export async function RecentSales() {
                 </p>
               </div>
               <div className="ml-auto font-medium">
-                +${new Intl.NumberFormat("en-US").format(item.totalPrice / 100)}
+                +&#8358;
+                {new Intl.NumberFormat("en-US").format(item.totalPrice / 100)}
               </div>
             </div>
           ))}
