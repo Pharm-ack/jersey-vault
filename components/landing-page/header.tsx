@@ -184,7 +184,7 @@ export function Header() {
                 </Button>
               </DialogTrigger>
               <DialogTitle></DialogTitle>
-              <DialogContent className="w-[500px] max-h-[150px]">
+              <DialogContent className="rounded w-[350px] max-h-[200px]">
                 <DialogHeader>
                   <DialogTitle>Log in as Admin to view dashboard</DialogTitle>
                   <DialogDescription>
