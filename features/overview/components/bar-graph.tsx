@@ -85,7 +85,7 @@ export function BarGraph({ data }: RevenueChartProps) {
                 tickLine={false}
                 axisLine={false}
                 tickMargin={8}
-                tickFormatter={(value) => `$${value.toFixed(2)}`}
+                tickFormatter={(value) => `\u20A6${value.toFixed(2)}`}
               />
               <ChartTooltip
                 content={
@@ -100,7 +100,7 @@ export function BarGraph({ data }: RevenueChartProps) {
                       })
                     }
                     formatter={(value) =>
-                      `$&#8358;{typeof value === "number" ? value.toFixed(2) : value}`
+                      `${typeof value === "number" ? value.toFixed(2) : value}`
                     }
                   />
                 }

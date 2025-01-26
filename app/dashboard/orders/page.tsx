@@ -110,8 +110,7 @@ async function OrderTable() {
               {new Intl.DateTimeFormat("en-US").format(item.createdAt)}
             </TableCell>
             <TableCell className="text-right">
-              &#8358;
-              {new Intl.NumberFormat("en-US").format(item.totalPrice / 100)}
+              ₦{new Intl.NumberFormat("en-US").format(item.totalPrice / 100)}
             </TableCell>
           </TableRow>
         ))}

@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Slider } from "@/components/ui/slider";
-import { DollarSign, Ruler, Tag, X } from "lucide-react";
+import { Ruler, Tag, X } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "../ui/button";
 
@@ -114,7 +114,7 @@ export function FilterSidebar({
           <AccordionItem value="price" className="border-none">
             <AccordionTrigger className="text-sm font-medium py-3 hover:no-underline">
               <span className="flex items-center">
-                <DollarSign className="h-4 w-4 mr-2" />
+                <span className="h-4 w-4 mr-2">₦</span>
                 Price Range
               </span>
             </AccordionTrigger>
@@ -131,8 +131,8 @@ export function FilterSidebar({
                   className="mt-6"
                 />
                 <div className="flex justify-between text-sm">
-                  <span className="font-medium">${minPrice || 0}</span>
-                  <span className="font-medium">${maxPrice || 1000}</span>
+                  <span className="font-medium">₦{minPrice || 0}</span>
+                  <span className="font-medium">₦{maxPrice || 1000}</span>
                 </div>
               </div>
             </AccordionContent>

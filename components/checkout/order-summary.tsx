@@ -43,7 +43,7 @@ export default function OrderSummary({
                 Qty: {item.quantity}
               </p>
               <p className="text-sm font-semibold text-primary">
-                &#8358;{(item.product.price * item.quantity).toFixed(2)}
+                ₦{(item.product.price * item.quantity).toFixed(2)}
               </p>
             </div>
           </div>
@@ -55,15 +55,15 @@ export default function OrderSummary({
           <div className="space-y-3">
             <div className="flex justify-between text-sm">
               <span className="text-muted-foreground">Subtotal</span>
-              <span className="font-medium">&#8358;{subtotal.toFixed(2)}</span>
+              <span className="font-medium">₦{subtotal.toFixed(2)}</span>
             </div>
             <div className="flex justify-between text-sm">
               <span className="text-muted-foreground">Shipping</span>
-              <span className="font-medium">&#8358;{shipping.toFixed(2)}</span>
+              <span className="font-medium">₦{shipping.toFixed(2)}</span>
             </div>
             <div className="flex justify-between text-sm">
               <span className="text-muted-foreground">Tax</span>
-              <span className="font-medium">&#8358;{tax.toFixed(2)}</span>
+              <span className="font-medium">₦{tax.toFixed(2)}</span>
             </div>
           </div>
 
@@ -72,7 +72,7 @@ export default function OrderSummary({
           <div className="flex justify-between items-center">
             <span className="text-lg font-semibold">Total</span>
             <span className="text-lg font-bold text-primary">
-              &#8358;{total.toFixed(2)}
+              ₦{total.toFixed(2)}
             </span>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function OrderSummary({
         <div className="pt-6 space-y-3">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Truck className="h-4 w-4" />
-            <span>Free shipping on orders over &#8358;30000</span>
+            <span>Free shipping on orders over ₦30000</span>
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <CreditCard className="h-4 w-4" />

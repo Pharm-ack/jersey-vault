@@ -140,6 +140,7 @@ export default function AppSidebar() {
                       <SidebarMenuButton
                         tooltip={item.title}
                         isActive={pathname === item.url}
+                        className="hover:bg-accent hover:text-accent-foreground transition-colors"
                       >
                         {item.icon && <Icon />}
                         <span>{item.title}</span>
@@ -153,6 +154,7 @@ export default function AppSidebar() {
                             <SidebarMenuSubButton
                               asChild
                               isActive={pathname === subItem.url}
+                              className="hover:bg-accent hover:text-accent-foreground transition-colors"
                             >
                               <Link href={subItem.url}>
                                 <span>{subItem.title}</span>
@@ -170,6 +172,7 @@ export default function AppSidebar() {
                     asChild
                     tooltip={item.title}
                     isActive={pathname === item.url}
+                    className="hover:bg-accent hover:text-accent-foreground transition-colors"
                   >
                     <Link href={item.url}>
                       <Icon />

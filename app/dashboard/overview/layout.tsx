@@ -1,7 +1,7 @@
 import PageContainer from "@/components/layout/page-container";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import prisma from "@/lib/prisma";
-import { DollarSign, PartyPopper, ShoppingBag, User2 } from "lucide-react";
+import { PartyPopper, ShoppingBag, User2 } from "lucide-react";
 import React from "react";
 
 async function getData() {
@@ -60,12 +60,11 @@ export default async function OverViewLayout({
               <CardTitle className="text-sm font-medium">
                 Total Revenue
               </CardTitle>
-              <DollarSign className="h-4 w-4 text-green-500" />
+              <span className="h-4 w-4 text-green-500">₦</span>
             </CardHeader>
             <CardContent>
               <p className="text-2xl font-bold">
-                &#8358;
-                {new Intl.NumberFormat("en-US").format(totalAmount / 100)}
+                ₦{new Intl.NumberFormat("en-US").format(totalAmount / 100)}
               </p>
               <p className="text-xs text-muted-foreground">
                 Based on 100 Charges

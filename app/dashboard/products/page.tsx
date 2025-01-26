@@ -120,7 +120,7 @@ async function ProductTable() {
                 )}
               </div>
             </TableCell>
-            <TableCell> &#8358;{item.price}</TableCell>
+            <TableCell> ₦{item.price}</TableCell>
             <TableCell>
               {new Intl.DateTimeFormat("en-US").format(item.createdAt)}
             </TableCell>

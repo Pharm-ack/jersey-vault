@@ -39,7 +39,7 @@ export function Cart({ isOpen, onClose }: { isOpen: boolean; onClose: any }) {
                     <p className="font-mono uppercase text-sm">
                       {item.product.id.split("-").slice(0, -1).join("-")}
                     </p>
-                    <p className="font-mono">&#8358;{item.product.price}</p>
+                    <p className="font-mono">₦{item.product.price}</p>
                   </div>
                   <div className="space-y-1">
                     <div className="flex items-center justify-between">
@@ -81,7 +81,7 @@ export function Cart({ isOpen, onClose }: { isOpen: boolean; onClose: any }) {
             <div className="p-8 space-y-4">
               <div className="flex justify-between items-center">
                 <p className="font-mono uppercase">Total</p>
-                <p className="font-mono">&#8358;{total}</p>
+                <p className="font-mono">₦{total}</p>
               </div>
               <p className="font-mono text-sm text-muted-foreground">
                 TAX AND SHIPPING NOT INCLUDED
