@@ -316,6 +316,10 @@ export async function createOrder(formData: FormData, cartItems: any[]) {
     });
     if (!user) throw new Error("User not found");
 
+    if (!user.email) {
+      throw new Error("User email is required to proceed with payment.");
+    }
+
     let addressId: string;
     let addressDetails: {
       street: string;
