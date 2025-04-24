@@ -31,7 +31,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       return true;
     },
 
-    async jwt({ token, user, account, trigger }) {
+    async jwt({ token, user, account, trigger }: any) {
       // Initial sign in
       if (user) {
         token.role = user.role;

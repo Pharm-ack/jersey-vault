@@ -55,7 +55,8 @@ export default function RootLayout({
       <body className={`${GeistMono.className} scroll-smooth`}>
         <SessionProvider>
           <CartProvider>
-            <NextTopLoader showSpinner={false} />
+            <NextTopLoader color="#29d" height={3} showSpinner={false} />
+
             <Toaster />
             <div className="flex flex-col min-h-screen h-screen">
               {children}
